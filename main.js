@@ -37,7 +37,7 @@ var checkForWinner = function () {
   {
     console.log('somebody won');
     
-    .trigger('game-win', (e, winner));
+    $('document').trigger('game-win', currentPlayer);
     // TODO: Trigger 'game-win' event with the winning player as the event data
   }
 };
